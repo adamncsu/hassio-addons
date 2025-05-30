@@ -1,0 +1,22 @@
+{
+  "name": "Argon ONE Auto Power-On",
+  "version": "1.0",
+  "slug": "argon-i2c-on",
+  "description": "Enables auto power-on for Argon ONE case via i2c",
+  "startup": "once",
+  "boot": "manual",
+  "init": false,
+  "arch": [
+    "aarch64",
+    "armv7"
+  ],
+  "host_network": false,
+  "privileged": [
+    "SYS_ADMIN"
+  ],
+  "devices": [
+    "/dev/i2c-1"
+  ],
+  "options": {},
+  "schema": {}
+}
