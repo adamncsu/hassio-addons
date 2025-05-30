@@ -3,5 +3,7 @@ echo "Reading APO register:"
 i2cget -y 1 0x1A 0xFE
 echo "Running i2cset to enable auto power-on"
 i2cset -y 1 0x1A 0xFE 0x01
+echo "Reading APO register:"
+i2cget -y 1 0x1A 0xFE
 echo "Done. You can now remove this add-on."
 sleep 10
